@@ -1,0 +1,242 @@
+/* 颜色 */
+.cl2{color: black;}
+
+/* 大小 */
+.fs1{font-size:200px;}
+.fs2{font-size: 100px;}
+/* 粗细 */
+.fw{font-weight:600;}
+/* 楷体 */
+.ff{
+    color: white;
+    font-family:cursive;
+    line-height: 1px;
+}
+
+.box_all{
+    display:flex;
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.bm_box {
+	width: 1500px;
+	height:auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(203, 203, 203, 0.329);
+}
+/* 小框1 */
+.til{
+    display: flex;
+    width: 1500px;
+    height: auto;
+    background-color:gray;
+    flex-direction: row;
+}
+
+.til_1{ /*左侧*/
+    width: 80%;
+    margin-left: 10px;
+    height: auto;
+}
+.til_2{ /*右侧*/
+    width: 10%;
+    height: auto;
+}
+
+/* 搜索盒子 */
+.sousuo{
+    display: flex;
+    width: 1500px;
+    height: 90px;
+    background-color:white;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.sousuo_tu{/*放图片*/
+    display: block;
+    width: 100px;
+    height: 90px;
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+}
+.sousuo_til{/*标题*/
+    width: 50%;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: white;
+    line-height: 3px;
+    .cl1{
+        color:rgb(181, 58, 58);
+        padding-left: 10px;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: bolder;
+    }
+    .cl3{
+        color: rgb(109, 109, 117);
+        
+    }
+}
+.sousuo_1{/*搜索栏*/
+    width: 30%;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    text-align: right;
+}
+/* 锚点链接 */
+.daohang{
+    display: flex;
+    width: 1500px;
+    height:50px;
+    background-color:rgb(181, 58, 58);
+    flex-direction: row;
+    .daohang_1{
+        width: 13%;
+        height: 100%;
+    }
+    .clwhite{
+        color: white;
+        text-align: center
+    }
+}
+/* 展示 */
+.zhanshi{
+    display: flex;
+    width: 1490px;
+    height:600px;
+    background-color:white;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    .you{/*放文字*/
+        display: block;
+        width: 45%;
+        height: 100%;
+        margin: 40px;
+        margin-left: 0;
+        flex-direction: column;
+        .box_1{
+            display:block;
+            width: 100%;
+            height: 30%;
+            border: 0;
+            border-bottom: 2px;
+            border-style: solid;
+            border-color: gray;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            .cl{text-align: center;
+            line-height: 40px;}
+            .cl3{
+                color: rgb(109, 109, 117);
+                line-height: 35px;
+            }
+        }
+        .box_2{
+            display:block;
+            width: 100%;
+            height: 70%;
+            .cl{text-align: center;
+            line-height: 30px;}
+            .ul{
+                list-style:square;
+                font-size: large;
+                line-height: 45px;
+                .clblack{color: black;}
+            }
+        }
+    }
+}
+.meiduan{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    .kaozuo{
+        width: 80%;
+        height: 45px;    
+    }
+    .kaoyou{
+        width: 20%;
+        height: 45px; 
+        padding-right: 5px; 
+    }
+}
+.zhanshi_tu{/*放图片*/
+    display: block;
+    width: 55%;
+    height: 520px;
+    margin: 40px;
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+}
+.guoxue{
+    display: flex;
+    width: 1490px;
+    height: 500px;
+    background-color:white;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 40px;
+    .guoxue1{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        background-color:aqua;
+        .guoxue11{
+            width: 10%;
+            height: 100%;
+            flex-direction: row;
+            border: 0;
+            border-bottom: 2px;
+            border-style: solid;
+            padding: 0;
+            border-color: red;
+            .text1{
+                width: auto;
+                height: auto;
+                text-align: center;
+                color: red;
+                background-color: bisque;
+            }
+        } 
+        .guoxue12{
+            width: 90%;
+            height: 100%;
+            border: 0;
+            border-bottom: 2px;
+            border-style: solid;
+            padding: 0;
+            border-color: gray;
+            .text2{
+                text-align: right;
+                color: gray;
+            }
+        }  
+    }
+    .guoxue2{
+        width: 100%;
+        height: 80%;
+        margin-top: 40px;
+        background-color:blue;
+    }
+
+}
