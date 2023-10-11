@@ -138,9 +138,18 @@
             border-color: gray;
             overflow:hidden;
             text-overflow:ellipsis;
-            .cl{text-align: center;
-            line-height: 40px;}
+            .cl{
+                text-align: center;
+                line-height: 40px;
+                color: black;
+            }
             .cl3{
+                padding-top: 20px;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; 
                 color: rgb(109, 109, 117);
                 line-height: 35px;
             }
@@ -188,55 +197,213 @@
 .guoxue{
     display: flex;
     width: 1490px;
-    height: 500px;
+    height: fit-content;
+    box-sizing: border-box;
     background-color:white;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 5px;
-    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     .guoxue1{
         display: flex;
         width: 100%;
         height: 10%;
-        background-color:aqua;
         .guoxue11{
             width: 10%;
-            height: 100%;
+            height: auto;
             flex-direction: row;
             border: 0;
             border-bottom: 2px;
-            border-style: solid;
             padding: 0;
-            border-color: red;
+            padding-top:15px;
+            border-style: solid;
+            border-color: rgb(181, 58, 58);
             .text1{
                 width: auto;
                 height: auto;
                 text-align: center;
-                color: red;
-                background-color: bisque;
+                color: rgb(181, 58, 58);
+                
             }
         } 
         .guoxue12{
             width: 90%;
-            height: 100%;
+            height: auto;
             border: 0;
             border-bottom: 2px;
             border-style: solid;
             padding: 0;
+            padding-top: 15px;
+            padding-right: 15px;
             border-color: gray;
+            text-align: right;
             .text2{
-                text-align: right;
-                color: gray;
+                color: black;
             }
         }  
     }
-    .guoxue2{
+}
+.guoxue2{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+}
+.buju1{
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    .pic{
         width: 100%;
-        height: 80%;
-        margin-top: 40px;
-        background-color:blue;
+        height: 100%;
     }
+    .text1{
+        padding-top: 15px;
+        color: rgb(181, 58, 58);
+        font-weight:bold ;
+        font-size: 20px;
+    }
+    .text2{ 
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 15px;
+        color: gray;
+        font-size: 15px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;   
+    }
+    .chakan{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin-top: 5px;
+        border: 2px solid gray;
+        padding: 10px;
+        text-align: center;
+        color: gray;
+    }
+}
+.buju2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+    .text1{
+        color: black;
+        font-size: 15px;
+    }
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+}
+.buju3{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
+    .text1{
+        color: black;
+        font-size: 15px;
+    }
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+    .pic2{
+        width: 100%;
+        height: 190px;
+    }
+    .pic3{
+        width: 100%;
+        height: 180px;
+    }
+}
+.chatu0{
+    padding-top: 30px;
+    width: 100%;
+    height: 55%;
+}
+.tiaoli{
+        display: flex;
+        width: 85%;
+        height: 80px;
+        border: 2px solid gray;
+        padding: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        flex-direction: row;
+        .kuang{
+            padding-top: 20px;
+            box-sizing: border-box;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+        }
+        .wenzi{
+            width: 80%;
+            height: auto;
+            max-height: 75px;
+            color: gray;
+            font-size: 15px;
+            margin-left: 11px;
+            padding: 0;
+            display: -webkit-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            .text1{
+                padding: 4px;
+                font-size: 20px;
+                color: black;
+                font-weight: 500;
+            }
+        }
+}
 
+.dibu{
+    background-color: rgba(0, 0, 0, 0.779);
+    display: flex;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-top: 3px solid red;
+    margin-top: 40px;
+    padding-top: 20px;
+    .text1{
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .text2{
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
 }

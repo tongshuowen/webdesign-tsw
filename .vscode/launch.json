@@ -1,16 +1,31 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
-      "name": "(gdb) Launch", 
-      "type": "cppdbg", 
-      "request": "launch", 
-      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe", 
-      "args": [], 
+      "type": "java",
+      "name": "TV",
+      "request": "launch",
+      "mainClass": "SimpleFactory.TV",
+      "projectName": "vs code_a9f21df6"
+    },
+    {
+      "type": "java",
+      "name": "Java Debug",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "externalTerminal"
+    },
+    {
+      "name": "(gdb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceRoot}",
       "environment": [],
-      "externalConsole": true, 
+      "externalConsole": true,
       "MIMode": "gdb",
       "miDebuggerPath": "A:\\MinGW\\bin\\gdb.exe",
       "preLaunchTask": "g++",
